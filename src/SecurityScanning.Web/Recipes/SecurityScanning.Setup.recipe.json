@@ -1,0 +1,35 @@
+{
+  "name": "SecurityScanning.Setup",
+  "displayName": "SecurityScanning Setup",
+  "description": "Setup recipe for the SecurityScanning platform.",
+  "author": "Lombiq",
+  "website": "http://lombiq.com/",
+  "version": "1.0",
+  "issetuprecipe": true,
+  "categories": [ "SecurityScanning" ],
+  "tags": [],
+
+  "steps": [
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "SecurityScanning.Web",
+          "name": "Blog"
+        },
+        {
+          "executionid": "SecurityScanning.Web",
+          "name": "SecurityScanning.Features"
+        },
+        {
+          "executionid": "SecurityScanning.Web",
+          "name": "SecurityScanning.Configuration"
+        },
+        {
+          "executionid": "SecurityScanning.Web",
+          "name": "SecurityScanning.Content"
+        }
+      ]
+    }
+  ]
+}

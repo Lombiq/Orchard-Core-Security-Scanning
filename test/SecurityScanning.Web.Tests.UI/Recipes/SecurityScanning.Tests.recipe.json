@@ -1,0 +1,23 @@
+{
+  "name": "SecurityScanning.Tests",
+  "displayName": "SecurityScanning Tests",
+  "description": "Setup recipe for the SecurityScanning platform for UI tests.",
+  "author": "Lombiq",
+  "website": "http://lombiq.com/",
+  "version": "1.0",
+  "issetuprecipe": true,
+  "categories": [ "SecurityScanning" ],
+  "tags": [],
+
+  "steps": [
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "SecurityScanning.Web.Tests.UI",
+          "name": "SecurityScanning.Setup"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+This is necessary for the deployment to create the wwwroot folder, don't delete it.

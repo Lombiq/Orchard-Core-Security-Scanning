@@ -1,0 +1,32 @@
+{
+  "name": "SecurityScanning.Features",
+  "displayName": "SecurityScanning - Features",
+  "description": "Features configuration.",
+  "author": "Lombiq",
+  "website": "http://lombiq.com/",
+  "version": "1.0",
+  "categories": [ "SecurityScanning" ],
+  "tags": [],
+
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        // SaaS
+        "OrchardCore.Tenants",
+        "OrchardCore.Users",
+        "OrchardCore.Users.AuditTrail",
+        "OrchardCore.Users.Registration",
+
+        // Content Management
+        "Lombiq.HelpfulExtensions.ContentTypes",
+        "Lombiq.HelpfulExtensions.Widgets",
+        "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget",
+        "OrchardCore.Localization",
+
+        // SecurityScanning modules
+        "SecurityScanning.Common"
+      ]
+    }
+  ]
+}

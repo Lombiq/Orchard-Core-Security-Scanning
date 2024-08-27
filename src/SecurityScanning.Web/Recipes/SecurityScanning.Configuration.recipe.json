@@ -1,0 +1,191 @@
+{
+  "name": "SecurityScanning.Configuration",
+  "displayName": "SecurityScanning - Configuration",
+  "description": "Common module configuration and settings.",
+  "author": "Lombiq",
+  "website": "http://lombiq.com/",
+  "version": "1.0",
+  "categories": [ "SecurityScanning" ],
+  "tags": [],
+
+  "steps": [
+    {
+      "name": "settings",
+      "AdminSettings": {
+        "DisplayDarkMode": true,
+        "DisplayMenuFilter": false,
+        "DisplayNewMenu": true,
+        "DisplayTitlesInTopbar": false
+      },
+      "AuditTrailSettings": {
+        "Categories": [
+          {
+            "Name": "Content",
+            "Events": [
+              {
+                "Name": "Created",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Saved",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Published",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Unpublished",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Removed",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Cloned",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Restored",
+                "Category": "Content",
+                "IsEnabled": true
+              }
+            ]
+          },
+          {
+            "Name": "User",
+            "Events": [
+              {
+                "Name": "Registered",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LoggedIn",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LogInFailed",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LogInIsLockedOut",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Enabled",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Disabled",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Created",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Updated",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Deleted",
+                "Category": "User",
+                "IsEnabled": true
+              }
+            ]
+          }
+        ],
+        "ClientIpAddressAllowed": true
+      },
+      "AuditTrailTrimmingSettings": {
+        "RetentionDays": 90,
+        "LastRunUtc": null,
+        "Disabled": false
+      },
+      "ContentAuditTrailSettings": {
+        "AllowedContentTypes": [
+          "LayoutInjection",
+          "LiquidWidget",
+          "LocalizedProduct",
+          "Menu",
+          "Page",
+          "Taxonomy"
+        ]
+      },
+      "LocalizationSettings": {
+        "DefaultCulture": "en-US",
+        "SupportedCultures": [
+          "en-US"
+        ]
+      },
+      "LoginSettings": {
+        "UseSiteTheme": true
+      },
+      "RegistrationSettings": {
+        "UsersCanRegister": 1,
+        "UseSiteTheme": true
+      }
+    },
+    {
+      "name": "Roles",
+      "Roles": [
+        {
+          "Name": "Administrator",
+          "Description": "Administrator",
+          "Permissions": [
+            "SiteOwner"
+          ]
+        },
+        {
+          "Name": "Moderator",
+          "Description": "Moderator",
+          "Permissions": []
+        },
+        {
+          "Name": "Editor",
+          "Description": "Editor",
+          "Permissions": []
+        },
+        {
+          "Name": "Author",
+          "Description": "Author",
+          "Permissions": []
+        },
+        {
+          "Name": "Contributor",
+          "Description": "Contributor",
+          "Permissions": []
+        },
+        {
+          "Name": "Authenticated",
+          "Description": "Authenticated",
+          "Permissions": [
+            "Checkout"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Description": "Anonymous",
+          "Permissions": [
+            "ViewContent"
+          ]
+        }
+      ]
+    }
+  ]
+}
