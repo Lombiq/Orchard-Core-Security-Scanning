@@ -14,7 +14,7 @@ builder.Services
     .AddSingleton(configuration)
     .AddOrchardCms(orchardCoreBuilder =>
         orchardCoreBuilder
-            .ConfigureHostingDefaults(builder)
+            .ConfigureSecurityDefaultsWithStaticFiles(allowInlineStyle: true)
             .EnableAutoSetupIfNotUITesting(configuration));
 
 var app = builder.Build();
