@@ -25,7 +25,6 @@ public class SecurityScanningTests : UITestBase
         ExecuteTestAfterBrowserSetupWithoutBrowserAsync(
             context => context.RunAndAssertBaselineSecurityScanAsync(
                 configuration => configuration
-                    ////.UseAjaxSpider() // This is quite slow so just showing you here but not running it.
                     .ExcludeUrlWithRegex(".*blog.*")
                     .DisablePassiveScanRule(10020, "The response does not include either Content-Security-Policy with 'frame-ancestors' directive.")
                     .DisableScanRuleForUrlWithRegex(".*/about", 10038, "Content Security Policy (CSP) Header Not Set")
