@@ -16,9 +16,9 @@ public class SecurityScanningTests : UITestBase
 
     [Fact]
     public Task BasicSecurityScanShouldPass() =>
-    ExecuteTestAfterBrowserSetupWithoutBrowserAsync(
-        context => context.RunAndAssertBaselineSecurityScanAsync(),
-        changeConfiguration: configuration => configuration.UseAssertAppLogsForSecurityScan());
+        ExecuteTestAfterBrowserSetupWithoutBrowserAsync(
+            context => context.RunAndAssertBaselineSecurityScanAsync(),
+            changeConfiguration: configuration => configuration.UseAssertAppLogsForSecurityScan());
 
     [Fact]
     public Task SecurityScanWithCustomConfigurationShouldPass() =>
