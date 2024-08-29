@@ -2,11 +2,4 @@
   <PropertyGroup>
     <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
   </PropertyGroup>
-
-  <!-- Uncomment to enable static code analysis for the whole solution during rebuilds. -->
-  <!--<PropertyGroup Condition="$(MSBuildSecurityScanning.StartsWith('SecurityScanning.'))">
-    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
-  </PropertyGroup>-->
-
-  <Import Project="tools/Lombiq.Analyzers/Lombiq.Analyzers.OrchardCore/Build.props"/>
 </Project>

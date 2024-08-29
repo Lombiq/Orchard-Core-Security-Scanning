@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Lombiq.Tests.UI" Version="10.0.2-alpha.4.osoe-861" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
     <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
@@ -20,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\SecurityScanning.Web\SecurityScanning.Web.csproj" />
-    <ProjectReference Include="..\Lombiq.UITestingToolbox\Lombiq.Tests.UI\Lombiq.Tests.UI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
