@@ -12,4 +12,4 @@ Links to the projects that were used in the demo:
 
 - [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/)
 - [Helpful Libraries](https://github.com/Lombiq/Helpful-Libraries), specifically [Lombiq Helpful Libraries - Orchard Core Libraries - Security](https://github.com/Lombiq/Helpful-Libraries/blob/dev/Lombiq.HelpfulLibraries.OrchardCore/Docs/Security.md) for `ConfigureSecurityDefaultsWithStaticFiles()`
-- [Lombiq UI Testing Toolbox for Orchard Core](https://github.com/Lombiq/UI-Testing-Toolbox)
+- [Lombiq UI Testing Toolbox for Orchard Core](https://github.com/Lombiq/UI-Testing-Toolbox); check out the security scanning docs [here](https://github.com/Lombiq/UI-Testing-Toolbox/blob/dev/Lombiq.Tests.UI/Docs/SecurityScanning.md)
