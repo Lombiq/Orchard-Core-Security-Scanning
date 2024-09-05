@@ -32,6 +32,7 @@ public class UITestBase : OrchardCoreUITestBase<Program>
             async configuration =>
             {
                 configuration.HtmlValidationConfiguration.RunHtmlValidationAssertionOnAllPageChanges = false;
+                configuration.MaxRetryCount = 0;
 
                 if (changeConfigurationAsync != null) await changeConfigurationAsync(configuration);
             });
