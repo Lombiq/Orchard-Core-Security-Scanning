@@ -1,13 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Tests\CustomZapAutomationFrameworkPlan.yml" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Lombiq.Tests.UI" Version="10.0.2-alpha.4.osoe-861" />
@@ -25,9 +21,6 @@
 
   <ItemGroup>
     <Content Include="Recipes\SecurityScanning.Tests.recipe.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\CustomZapAutomationFrameworkPlan.yml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
